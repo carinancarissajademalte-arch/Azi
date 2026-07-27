@@ -1,0 +1,2207 @@
+/* =========================================================
+   BOSS BABY INVITATION
+   AZRIEL JADE C. TROGUE
+   CLEAN & PHONE-FRIENDLY STYLE
+========================================================= */
+
+
+/* =========================================================
+   1. GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #173A5E;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+::selection {
+    background-color: #F6C343;
+    color: #173A5E;
+}
+
+
+/* =========================================================
+   2. BACKGROUND DECORATIONS
+========================================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: rgba(47, 128, 201, 0.08);
+    top: 10%;
+    left: -120px;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: rgba(246, 195, 67, 0.12);
+    bottom: 5%;
+    right: -140px;
+    z-index: -1;
+}
+
+
+/* =========================================================
+   3. TOP SECRET STAMP
+========================================================= */
+
+.top-secret-stamp {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 1000;
+
+    padding: 7px 13px;
+
+    background-color: #D92F2F;
+    color: white;
+
+    border: 3px solid white;
+    border-radius: 5px;
+
+    box-shadow: 0 4px 0 #A91F1F;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    transform: rotate(6deg);
+}
+
+
+/* =========================================================
+   4. HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: 100svh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 80px 20px 50px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(23, 58, 94, 0.88),
+            rgba(23, 58, 94, 0.88)
+        ),
+        url("images/2.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circles */
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    background-color: rgba(47, 128, 201, 0.25);
+
+    top: -230px;
+    left: -150px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background-color: rgba(246, 195, 67, 0.20);
+
+    bottom: -180px;
+    right: -100px;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   5. CLASSIFIED LABEL
+========================================================= */
+
+.classified-label {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 8px 16px;
+    margin-bottom: 15px;
+
+    background-color: #D92F2F;
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    box-shadow: 0 4px 0 #A91F1F;
+}
+
+.classified-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background-color: #F6C343;
+
+    animation: pulse 1.5s infinite;
+}
+
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   6. HERO CONTENT
+========================================================= */
+
+.briefcase-icon {
+    font-size: 55px;
+    margin: 5px 0 10px;
+
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+}
+
+
+.hero h1 {
+    margin-bottom: 15px;
+
+    font-size: clamp(38px, 7vw, 70px);
+
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    display: block;
+    color: #F6C343;
+}
+
+
+.hero-intro {
+    max-width: 400px;
+
+    margin: 0 auto 22px;
+
+    color: #EAF6FF;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   7. HERO MISSION CARD
+========================================================= */
+
+.mission-card {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto 20px;
+
+    padding: 25px 20px;
+
+    background-color: white;
+    color: #173A5E;
+
+    border: 4px solid #2F80C9;
+    border-radius: 18px;
+
+    box-shadow: 0 6px 0 #F6C343;
+}
+
+
+.mission-label {
+    margin-bottom: 8px;
+
+    color: #D92F2F;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.mission-card h2 {
+    color: #173A5E;
+
+    font-size: clamp(24px, 5vw, 42px);
+
+    line-height: 1.2;
+
+    overflow-wrap: anywhere;
+}
+
+
+.mission-date {
+    margin-top: 8px;
+
+    color: #2F80C9;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.mission-date strong {
+    color: #D92F2F;
+}
+
+
+.hero-date {
+    margin: 15px 0;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   8. OPEN BUTTON
+========================================================= */
+
+.open-button {
+    width: 100%;
+    max-width: 270px;
+
+    min-height: 50px;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #F6C343;
+    color: #173A5E;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0 5px 0 #C59B24;
+
+    transition: 0.3s;
+}
+
+
+.open-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 0 #C59B24;
+}
+
+
+.scroll-hint {
+    margin-top: 12px;
+
+    color: #EAF6FF;
+
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   9. GENERAL SECTIONS
+========================================================= */
+
+.section-container {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+.section-label {
+    margin-bottom: 10px;
+
+    color: #D92F2F;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.section-container h2 {
+    color: #173A5E;
+
+    font-size: clamp(30px, 5vw, 55px);
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+
+.section-container h2 span {
+    color: #D92F2F;
+}
+
+
+.section-description {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.file-tab {
+    display: inline-block;
+
+    padding: 7px 17px;
+    margin-bottom: 25px;
+
+    background-color: #2F80C9;
+    color: white;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    box-shadow: 4px 4px 0 #173A5E;
+}
+
+
+/* =========================================================
+   10. MISSION BRIEFING
+========================================================= */
+
+.mission-briefing {
+    padding: 80px 0;
+
+    background-color: #DFF3FF;
+
+    text-align: center;
+}
+
+
+.classified-note {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 35px auto 0;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 7px 0 #2F80C9;
+
+    text-align: left;
+}
+
+
+.note-header {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 13px 18px;
+
+    background-color: #173A5E;
+    color: #F6C343;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.classified-note p {
+    padding: 22px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   11. CELEBRANT
+========================================================= */
+
+.celebrant-section {
+    padding: 80px 0;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+
+.celebrant-profile {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+    margin-top: 40px;
+
+    text-align: left;
+}
+
+
+.photo-frame {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    background-color: #F6C343;
+
+    border-radius: 22px;
+
+    box-shadow: 9px 9px 0 #D92F2F;
+}
+
+
+.photo-frame img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+.photo-badge {
+    position: absolute;
+
+    right: -15px;
+    bottom: 25px;
+
+    padding: 9px 22px;
+
+    background-color: #173A5E;
+    color: #F6C343;
+
+    border: 4px solid white;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 4px 4px 0 #D92F2F;
+}
+
+
+.nameplate {
+    padding: 22px;
+
+    background-color: #DFF3FF;
+
+    border-left: 7px solid #2F80C9;
+
+    border-radius: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.nameplate h3 {
+    color: #173A5E;
+
+    font-size: clamp(25px, 4vw, 40px);
+
+    line-height: 1.2;
+
+    overflow-wrap: anywhere;
+}
+
+
+.nameplate p {
+    margin-top: 7px;
+
+    color: #2F80C9;
+
+    font-weight: 600;
+}
+
+
+.dedication-text {
+    margin-top: 18px;
+
+    padding: 15px 18px;
+
+    background-color: #FFF7D6;
+
+    border-left: 5px solid #F6C343;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   12. PARTY BRIEFING
+========================================================= */
+
+.party-briefing-section {
+    padding: 70px 0;
+
+    background-color: #DFF3FF;
+
+    text-align: center;
+}
+
+
+.party-briefing-section h2 {
+    font-size: clamp(28px, 5vw, 45px);
+}
+
+
+.party-briefing-card {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 35px auto 0;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 4px solid #173A5E;
+
+    border-radius: 20px;
+
+    box-shadow:
+        6px 6px 0 #F6C343,
+        11px 11px 0 #D92F2F;
+
+    text-align: left;
+}
+
+
+.briefing-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px 0;
+}
+
+
+.briefing-detail:not(:last-of-type) {
+    border-bottom: 1px dashed #B9DDF5;
+}
+
+
+.briefing-icon {
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F6C343;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+}
+
+
+.briefing-content {
+    min-width: 0;
+}
+
+
+.briefing-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #2F80C9;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+.briefing-content p {
+    color: #173A5E;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   13. COUNTDOWN INSIDE PARTY BRIEFING
+========================================================= */
+
+.briefing-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 12px 0 25px;
+
+    background-color: #B9DDF5;
+}
+
+
+.briefing-countdown {
+    text-align: center;
+}
+
+
+.briefing-countdown .briefing-label {
+    color: #D92F2F;
+}
+
+
+.countdown-message {
+    margin-bottom: 18px;
+
+    color: #173A5E;
+
+    font-size: 13px;
+}
+
+
+.briefing-countdown .countdown {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+
+.briefing-countdown .countdown-box {
+    padding: 15px 5px;
+
+    background-color: #173A5E;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.briefing-countdown .countdown-box span {
+    display: block;
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+.briefing-countdown .countdown-box small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #F6C343;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   14. DRESS CODE
+========================================================= */
+
+.dress-code-section {
+    padding: 80px 0;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+
+.dress-code-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 35px auto 0;
+
+    padding: 30px;
+
+    background-color: #DFF3FF;
+
+    border: 4px solid #2F80C9;
+
+    border-radius: 22px;
+
+    box-shadow: 7px 7px 0 #F6C343;
+
+    text-align: left;
+}
+
+
+.dress-code-icon {
+    flex-shrink: 0;
+
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F6C343;
+
+    border-radius: 50%;
+
+    font-size: 40px;
+}
+
+
+.dress-code-content h3 {
+    margin-bottom: 7px;
+
+    color: #173A5E;
+
+    font-size: 23px;
+}
+
+
+.dress-code-content p {
+    color: #173A5E;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   15. GIFT IDEAS
+========================================================= */
+
+.gift-ideas-section {
+    padding: 80px 0;
+
+    background-color: #FFF7D6;
+
+    text-align: center;
+}
+
+
+.gift-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: 40px auto 0;
+}
+
+
+.gift-card {
+    min-width: 0;
+
+    padding: 18px 10px;
+
+    background-color: white;
+
+    border: 3px solid #DFF3FF;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 0 #2F80C9;
+
+    transition: 0.3s;
+}
+
+
+.gift-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.gift-image {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+}
+
+
+.gift-image img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+}
+
+
+.gift-card h3 {
+    color: #173A5E;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   16. CLASSIFIED MEMORIES CAROUSEL
+========================================================= */
+
+.gallery-section {
+    padding: 80px 0;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+
+.memory-carousel {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    width: 100%;
+    max-width: 750px;
+
+    margin: 40px auto 0;
+}
+
+
+.carousel-window {
+    width: 100%;
+    max-width: 600px;
+
+    overflow: hidden;
+
+    border: 6px solid #F6C343;
+
+    border-radius: 22px;
+
+    background-color: #173A5E;
+
+    box-shadow: 7px 7px 0 #D92F2F;
+}
+
+
+.carousel-track {
+    display: flex;
+
+    width: 100%;
+
+    transition: transform 0.5s ease;
+}
+
+
+.memory-slide {
+    position: relative;
+
+    min-width: 100%;
+
+    overflow: hidden;
+
+    background-color: #173A5E;
+}
+
+
+.memory-slide img {
+    width: 100%;
+    height: 480px;
+
+    object-fit: cover;
+}
+
+
+.memory-caption {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 35px 20px 18px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(23, 58, 94, 0.95)
+        );
+
+    color: white;
+
+    text-align: left;
+}
+
+
+.memory-caption span {
+    color: #F6C343;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.memory-caption h3 {
+    margin-top: 4px;
+
+    color: white;
+
+    font-size: 21px;
+}
+
+
+.memory-slide .classified-stamp {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 2;
+
+    padding: 6px 10px;
+
+    background-color: #D92F2F;
+    color: white;
+
+    border: 2px solid white;
+
+    border-radius: 5px;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    transform: rotate(-5deg);
+
+    box-shadow: 3px 3px 0 #173A5E;
+}
+
+
+/* =========================================================
+   17. CAROUSEL BUTTONS
+========================================================= */
+
+.carousel-button {
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #2F80C9;
+    color: white;
+
+    font-size: 30px;
+
+    box-shadow: 0 4px 0 #173A5E;
+
+    transition: 0.3s;
+}
+
+
+.carousel-button:hover {
+    transform: translateY(-3px);
+
+    background-color: #D92F2F;
+}
+
+
+.carousel-button:active {
+    transform: translateY(2px);
+}
+
+
+/* =========================================================
+   18. CAROUSEL DOTS
+========================================================= */
+
+.carousel-dots {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+
+.carousel-dot {
+    width: 9px;
+    height: 9px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #B9DDF5;
+
+    transition: 0.3s;
+}
+
+
+.carousel-dot.active {
+    width: 24px;
+
+    border-radius: 10px;
+
+    background-color: #D92F2F;
+}
+
+
+/* =========================================================
+   19. RSVP
+========================================================= */
+
+.rsvp-section {
+    padding: 80px 20px;
+
+    background-color: #DFF3FF;
+
+    text-align: center;
+}
+
+
+.rsvp-card {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border: 5px solid #2F80C9;
+
+    border-radius: 25px;
+
+    box-shadow:
+        8px 8px 0 #F6C343,
+        15px 15px 0 #D92F2F;
+}
+
+
+.rsvp-card h2 {
+    color: #173A5E;
+
+    font-size: clamp(30px, 5vw, 45px);
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+
+.rsvp-description {
+    max-width: 500px;
+
+    margin: 0 auto 30px;
+
+    font-size: 14px;
+}
+
+
+.rsvp-form-box {
+    width: 100%;
+
+    padding: 25px;
+
+    background-color: #F8FCFF;
+
+    border: 2px solid #DFF3FF;
+
+    border-radius: 18px;
+}
+
+
+#rsvpForm {
+    width: 100%;
+
+    text-align: left;
+}
+
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 22px;
+}
+
+
+.form-group > label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #173A5E;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    display: block;
+
+    width: 100%;
+    height: 45px;
+
+    padding: 10px 13px;
+
+    border: 2px solid #DFF3FF;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: #173A5E;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    border-color: #2F80C9;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(47, 128, 201, 0.12);
+}
+
+
+.optional {
+    color: #777;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.form-group small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #777;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   20. ATTENDANCE
+========================================================= */
+
+.attendance-options {
+    display: flex;
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+
+.option {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px;
+
+    background-color: white;
+
+    border: 2px solid #DFF3FF;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.option:hover {
+    border-color: #F6C343;
+
+    background-color: #FFF7D6;
+}
+
+
+.option input {
+    accent-color: #D92F2F;
+}
+
+
+/* =========================================================
+   21. SUBMIT BUTTON
+========================================================= */
+
+.submit-button {
+    display: block;
+
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background-color: #D92F2F;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0 5px 0 #A91F1F;
+
+    transition: 0.3s;
+}
+
+
+.submit-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 0 #A91F1F;
+}
+
+
+/* =========================================================
+   22. SUCCESS MESSAGE
+========================================================= */
+
+.success-message {
+    display: none;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 25px 18px;
+
+    background-color: #FFF7D6;
+
+    border: 3px solid #F6C343;
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.success-icon {
+    font-size: 45px;
+}
+
+
+.success-message h3 {
+    margin: 8px 0;
+
+    color: #D92F2F;
+
+    font-size: 25px;
+}
+
+
+.success-message p {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   23. CLOSING
+========================================================= */
+
+.closing-section {
+    position: relative;
+
+    padding: 90px 20px;
+
+    background-color: #173A5E;
+    color: white;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+.closing-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+
+.closing-section .section-label {
+    color: #F6C343;
+}
+
+
+.closing-section h2 {
+    margin: 15px 0;
+
+    color: white;
+
+    font-size: clamp(35px, 6vw, 60px);
+
+    line-height: 1.2;
+}
+
+
+.closing-signature {
+    margin-top: 25px;
+
+    font-size: 16px;
+}
+
+
+.closing-signature strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #F6C343;
+
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   24. FOOTER
+========================================================= */
+
+footer {
+    padding: 22px 15px;
+
+    background-color: #102A43;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+footer p {
+    margin-bottom: 4px;
+
+    color: #F6C343;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+footer span {
+    color: #B9DDF5;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   25. TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .celebrant-profile {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+
+    .celebrant-info {
+        text-align: center;
+    }
+
+
+    .photo-frame {
+        max-width: 400px;
+    }
+
+
+    .gift-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        max-width: 650px;
+    }
+
+
+    .memory-carousel {
+        max-width: 650px;
+    }
+
+
+    .carousel-window {
+        max-width: 520px;
+    }
+
+
+    .memory-slide img {
+        height: 430px;
+    }
+
+}
+
+
+/* =========================================================
+   26. PHONE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 14px;
+    }
+
+
+    /* GENERAL */
+
+    .section-container {
+        width: calc(100% - 30px);
+    }
+
+
+    .mission-briefing,
+    .celebrant-section,
+    .party-briefing-section,
+    .dress-code-section,
+    .gift-ideas-section,
+    .gallery-section {
+        padding: 60px 0;
+    }
+
+
+    .section-container h2 {
+        font-size: 30px;
+    }
+
+
+    .section-description {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    .file-tab {
+        margin-bottom: 20px;
+
+        padding: 6px 14px;
+
+        font-size: 8px;
+    }
+
+
+    /* TOP SECRET */
+
+    .top-secret-stamp {
+        top: 10px;
+        right: 8px;
+
+        padding: 5px 9px;
+
+        border-width: 2px;
+
+        font-size: 7px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 70px 15px 35px;
+    }
+
+
+    .hero-content {
+        max-width: 380px;
+    }
+
+
+    .classified-label {
+        padding: 7px 13px;
+
+        font-size: 8px;
+    }
+
+
+    .briefcase-icon {
+        font-size: 38px;
+    }
+
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+
+    .hero-intro {
+        max-width: 310px;
+
+        font-size: 13px;
+    }
+
+
+    .mission-card {
+        max-width: 340px;
+
+        padding: 20px 15px;
+
+        border-width: 3px;
+    }
+
+
+    .mission-card h2 {
+        font-size: 21px;
+    }
+
+
+    .mission-date {
+        font-size: 14px;
+    }
+
+
+    .hero-date {
+        font-size: 12px;
+    }
+
+
+    .open-button {
+        max-width: 260px;
+
+        min-height: 48px;
+
+        font-size: 13px;
+    }
+
+
+    .scroll-hint {
+        font-size: 9px;
+    }
+
+
+    /* MISSION BRIEFING */
+
+    .classified-note {
+        margin-top: 25px;
+    }
+
+
+    .note-header {
+        padding: 11px 13px;
+
+        font-size: 7px;
+    }
+
+
+    .classified-note p {
+        padding: 18px;
+
+        font-size: 13px;
+    }
+
+
+    /* CELEBRANT */
+
+    .celebrant-profile {
+        gap: 35px;
+
+        margin-top: 30px;
+    }
+
+
+    .photo-frame {
+        max-width: 340px;
+
+        padding: 7px;
+
+        box-shadow: 6px 6px 0 #D92F2F;
+    }
+
+
+    .photo-frame img {
+        height: 380px;
+    }
+
+
+    .photo-badge {
+        right: -7px;
+        bottom: 18px;
+
+        padding: 7px 15px;
+
+        border-width: 3px;
+
+        font-size: 11px;
+    }
+
+
+    .nameplate {
+        padding: 18px 15px;
+    }
+
+
+    .nameplate h3 {
+        font-size: 26px;
+    }
+
+
+    /* PARTY BRIEFING */
+
+    .party-briefing-card {
+        margin-top: 25px;
+
+        padding: 18px;
+
+        border-width: 3px;
+
+        border-radius: 16px;
+
+        box-shadow:
+            4px 4px 0 #F6C343,
+            8px 8px 0 #D92F2F;
+    }
+
+
+    .briefing-detail {
+        gap: 12px;
+
+        padding: 14px 0;
+    }
+
+
+    .briefing-icon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 19px;
+    }
+
+
+    .briefing-label {
+        font-size: 8px;
+    }
+
+
+    .briefing-content p {
+        font-size: 13px;
+    }
+
+
+    /* COUNTDOWN */
+
+    .briefing-countdown .countdown {
+        gap: 7px;
+    }
+
+
+    .briefing-countdown .countdown-box {
+        padding: 13px 3px;
+    }
+
+
+    .briefing-countdown .countdown-box span {
+        font-size: 22px;
+    }
+
+
+    .briefing-countdown .countdown-box small {
+        font-size: 6px;
+    }
+
+
+    /* DRESS CODE */
+
+    .dress-code-card {
+        flex-direction: column;
+
+        padding: 25px 18px;
+
+        gap: 18px;
+
+        text-align: center;
+
+        box-shadow: 5px 5px 0 #F6C343;
+    }
+
+
+    .dress-code-icon {
+        width: 70px;
+        height: 70px;
+
+        font-size: 35px;
+    }
+
+
+    .dress-code-content h3 {
+        font-size: 20px;
+    }
+
+
+    .dress-code-content p {
+        font-size: 13px;
+    }
+
+
+    /* GIFTS */
+
+    .gift-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+
+        margin-top: 30px;
+    }
+
+
+    .gift-card {
+        padding: 14px 7px;
+
+        border-radius: 15px;
+
+        box-shadow: 0 4px 0 #2F80C9;
+    }
+
+
+    .gift-image {
+        height: 80px;
+    }
+
+
+    .gift-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .gift-card h3 {
+        font-size: 11px;
+    }
+
+
+    /* CAROUSEL */
+
+    .memory-carousel {
+        gap: 7px;
+    }
+
+
+    .carousel-window {
+        width: calc(100% - 70px);
+
+        border-width: 5px;
+
+        border-radius: 18px;
+
+        box-shadow: 5px 5px 0 #D92F2F;
+    }
+
+
+    .memory-slide img {
+        height: 350px;
+    }
+
+
+    .carousel-button {
+        width: 36px;
+        height: 36px;
+
+        font-size: 24px;
+
+        box-shadow: 0 3px 0 #173A5E;
+    }
+
+
+    .memory-slide .classified-stamp {
+        top: 10px;
+        left: 10px;
+
+        padding: 5px 7px;
+
+        font-size: 6px;
+    }
+
+
+    .memory-caption {
+        padding: 30px 13px 13px;
+    }
+
+
+    .memory-caption span {
+        font-size: 7px;
+    }
+
+
+    .memory-caption h3 {
+        font-size: 16px;
+    }
+
+
+    /* RSVP */
+
+    .rsvp-section {
+        padding: 60px 15px;
+    }
+
+
+    .rsvp-card {
+        padding: 28px 18px;
+
+        border-width: 4px;
+
+        border-radius: 22px;
+
+        box-shadow:
+            5px 5px 0 #F6C343,
+            10px 10px 0 #D92F2F;
+    }
+
+
+    .rsvp-card h2 {
+        font-size: 30px;
+    }
+
+
+    .rsvp-description {
+        font-size: 13px;
+    }
+
+
+    .rsvp-form-box {
+        padding: 18px 15px;
+    }
+
+
+    .attendance-options {
+        flex-direction: column;
+    }
+
+
+    .option {
+        width: 100%;
+
+        min-height: 48px;
+    }
+
+
+    /* CLOSING */
+
+    .closing-section {
+        padding: 75px 20px;
+    }
+
+
+    .closing-section h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =========================================================
+   27. SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .section-container {
+        width: calc(100% - 24px);
+    }
+
+
+    .hero {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+
+    .mission-card h2 {
+        font-size: 19px;
+    }
+
+
+    .mission-card {
+        padding: 17px 12px;
+    }
+
+
+    .briefing-countdown .countdown-box span {
+        font-size: 19px;
+    }
+
+
+    .briefing-countdown .countdown-box small {
+        font-size: 5px;
+    }
+
+
+    .gift-grid {
+        gap: 9px;
+    }
+
+
+    .gift-card {
+        padding: 11px 5px;
+    }
+
+
+    .gift-image {
+        height: 70px;
+    }
+
+
+    .gift-image img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .gift-card h3 {
+        font-size: 10px;
+    }
+
+
+    .carousel-window {
+        width: calc(100% - 55px);
+    }
+
+
+    .memory-slide img {
+        height: 300px;
+    }
+
+
+    .carousel-button {
+        width: 30px;
+        height: 30px;
+
+        font-size: 20px;
+    }
+
+
+    .memory-caption h3 {
+        font-size: 14px;
+    }
+
+
+    .rsvp-card {
+        padding: 25px 13px;
+    }
+
+
+    .rsvp-form-box {
+        padding: 15px 12px;
+    }
+
+
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+        height: 42px;
+
+        font-size: 12px;
+    }
+
+
+    .option {
+        font-size: 11px;
+    }
+
+
+    .submit-button {
+        font-size: 13px;
+    }
+
+
+    .closing-section h2 {
+        font-size: 32px;
+    }
+
+}
